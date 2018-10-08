@@ -1,0 +1,172 @@
+@import url("style.css");
+/*reset.css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+/*_____________*/
+
+html, body {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: 'Open Sans', sans-serif;
+	color: #91b3b4;
+	background-image: url(http://bgfons.com/upload/stars_texture2943.jpg);
+	background-size: cover;
+	background-attachment: fixed; 
+}
+.wrapper {
+	/*position: relative;*/
+	height: 100%;
+	width: 100%;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+/* изображение, идущее по периметру экрана */
+.personage {
+	position:fixed;
+  height:60px;
+}
+
+h2 {
+	position:fixed;
+	bottom:5%;
+	left:10%;
+	font-size:16px;
+	font-weight: bold;
+}
+/*___________________*/
+
+h1 {
+	font-size: 40px;
+	line-height: 45px;
+	text-align: center;
+	margin: 50px;	
+	font-weight: bold;
+}
+ /*Знаки зодиака start */
+.items {
+	/*position: relative;*/
+	padding: 35px;
+	margin: 50px;
+	/*box-sizing: border-box;*/
+}
+
+.sign {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.sign img {
+	display: inline-block;
+	text-align: center;
+	margin: 20px;
+	max-height: 400px;
+	width: 25%;
+}
+/*Знаки зодиака finish*/
+.make {
+	position: absolute;
+	bottom: 5%;
+	left: 85%;
+	font-size: 10px;
+	/*position:fixed;*/
+	font-size:16px;
+}
+/*_______*/
+  body {
+  font-family: open sans;
+  font-size: 20px;
+}
+button {
+  margin: 10px;
+  padding: 5px;
+  width: 100px;
+  border-radius: 1px 1px 1px 1px;
+  border: 1px solid #3690f0;
+  background: linear-gradient(to bottom, #6db3f2 0%,#54a3ee 45%,#3690f0 56%,#1c51cc 100%);
+  font-size: 24px;
+  color: #fff;  
+}
+.menu {
+  width: 100%;
+  color: #303338;
+  box-sizing: border-box;
+ } 
+
+ .textHeader {
+   display: inline-block;
+   margin: 5px;
+   padding:5px 10px;
+   cursor: pointer;
+   border-radius: 1px 1px 1px 1px;
+   border: 1px solid #3690f0;
+   background: linear-gradient(to bottom, #6db3f2 0%,#54a3ee 45%,#3690f0 56%,#1c51cc 100%);
+   font-size: 24px;
+   color: #fff;  
+}
+.textBox {
+  position: fixed;
+  top:20%;
+  left:10%;
+  right:10%;
+  bottom:10%;
+  background-color:#3690f090;
+  border: 1px solid #3690f0;
+  padding: 5px 10px;
+  text-align: center;
+  color: #fff;
+}
+s

@@ -64,6 +64,7 @@ body {
 	background-image: url(http://bgfons.com/upload/stars_texture2943.jpg);
 	background-size: cover;
 	background-attachment: fixed; 
+	/*background: #104e7d;*/
 }
 .wrapper {
 	/*position: relative;*/
@@ -76,7 +77,7 @@ body {
 /* изображение, идущее по периметру экрана */
 .personage {
 	position:fixed;
-  height:60px;
+  height:80px;
 }
 
 h2 {
@@ -92,81 +93,61 @@ h1 {
 	font-size: 40px;
 	line-height: 45px;
 	text-align: center;
-	margin: 50px;	
+	margin: 60px;	
 	font-weight: bold;
 }
  /*Знаки зодиака start */
-.items {
-	/*position: relative;*/
-	padding: 35px;
-	margin: 50px;
-	/*box-sizing: border-box;*/
-}
-
 .sign {
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
+	padding: 35px;
+	margin: 50px;
 }
 
 .sign img {
 	display: inline-block;
 	text-align: center;
-	margin: 20px;
+	margin: 40px 45px;
 	max-height: 400px;
 	width: 25%;
 }
 /*Знаки зодиака finish*/
-.make {
+
+.author {
 	position: absolute;
 	bottom: 5%;
 	left: 85%;
 	font-size: 10px;
-	/*position:fixed;*/
-	font-size:16px;
+	font-size: 16px;
 }
 /*_______*/
-  body {
-  font-family: open sans;
-  font-size: 20px;
-}
-button {
-  margin: 10px;
-  padding: 5px;
-  width: 100px;
-  border-radius: 1px 1px 1px 1px;
-  border: 1px solid #3690f0;
-  background: linear-gradient(to bottom, #6db3f2 0%,#54a3ee 45%,#3690f0 56%,#1c51cc 100%);
-  font-size: 24px;
-  color: #fff;  
-}
-.menu {
-  width: 100%;
-  color: #303338;
-  box-sizing: border-box;
- } 
+ 
+/*.text-block {
+	position: fixed;
+	top: 40%;
+	width: 80%;
+	height: 700px;
+	background-image: url("images/bg-text-box.jpg");
 
- .textHeader {
-   display: inline-block;
-   margin: 5px;
-   padding:5px 10px;
-   cursor: pointer;
-   border-radius: 1px 1px 1px 1px;
-   border: 1px solid #3690f0;
-   background: linear-gradient(to bottom, #6db3f2 0%,#54a3ee 45%,#3690f0 56%,#1c51cc 100%);
-   font-size: 24px;
-   color: #fff;  
+	background: #032c4c;
 }
+*/
 .textBox {
-  position: fixed;
+	position: fixed;
   top:20%;
   left:10%;
   right:10%;
   bottom:10%;
-  background-color:#3690f090;
+  overflow: auto;
   border: 1px solid #3690f0;
   padding: 5px 10px;
   text-align: center;
   color: #fff;
+	background: #032c4c;
+	/*background-image: url(images/bg-text-box.jpg);*/
 }
-s
+
+.text {
+  color: #91b3b4;
+}

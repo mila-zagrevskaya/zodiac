@@ -66,7 +66,7 @@ function getInform (url) {
     messWin.onclick = function ( event ) {
       event.target.style.display = "none"
     }
-
+}
 
    function getFileFromServer ( url ) {
 		 fetch ( url )

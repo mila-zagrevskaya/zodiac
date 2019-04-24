@@ -7,7 +7,7 @@ point.currentDirection = "right"
 point.src = "images/master.png"
 document.body.appendChild(point)
 point.interval = setInterval ( movePoint, 100 )
-// 
+//
 // =======================  function setPointPosition
 function setPointPosition () {
 	point.style.top = point.currentPosition [1] + 'px'
@@ -57,28 +57,34 @@ function movePoint () {
 
 function getInform (url) {
   var container = document.querySelector (".sign")
-   var messWin = document.createElement('div')
+   var messWin = document.createElement("div")
     messWin.className = "textBox"
     container.appendChild ( messWin )
-    messWin.style.display = 'none'
+    messWin.style.display = "none"
+    messWin.style.display = "block"
+    messWin.innerHTML = getFileFromServer ( url )
     messWin.onclick = function ( event ) {
       event.target.style.display = "none"
     }
 
-    messWin.style.display = 'block'
-    messWin.innerHTML = getFileFromServer ( url )
-   
-  
+
    function getFileFromServer ( url ) {
-    var request = new XMLHttpRequest ()
-    request.className = "text"
-    request.onload = function () {
-      messWin.innerHTML += this.responseText
-    }
-    request.open ( "GET", url )
-    request.send ()
-   }
+		 fetch ( url )
+     .then(
+         response => response.json()
+            .then (
+                response => response.forEach (
+                    item => (
+                         elem => [ { src: item.ref } , { title: item.title} ]
+                              .forEach ( attr => Object.assign ( elem, attr ) )
+                    )(
+                       document.querySelector(".textBox")
+                           .appendChild (
+                              document
+                                 .createElement("img")
+                           )
+                    )
+                )
+           )
+    )
 }
-
-
-

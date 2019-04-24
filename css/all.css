@@ -108,6 +108,7 @@ h1 {
 .sign img {
 	display: inline-block;
 	text-align: center;
+	flex-grow: 1px;
 	margin: 40px 45px;
 	max-height: 400px;
 	width: 25%;
@@ -115,15 +116,15 @@ h1 {
 /*Знаки зодиака finish*/
 
 .author {
-	position: absolute;
+	position: fixed;
 	bottom: 5%;
 	left: 85%;
 	font-size: 10px;
 	font-size: 16px;
 }
 /*_______*/
- 
-*/
+ /*всплывающее окно для вывода текста*/
+
 .textBox {
 	position: fixed;
   top:20%;
@@ -134,7 +135,7 @@ h1 {
   border: 1px solid #3690f0;
   padding: 5px 10px;
   text-align: center;
-  color: #fff;
+  color: #91b3b4;
 	background: #032c4c;
 	/*background-image: url(images/bg-text-box.jpg);*/
 }
